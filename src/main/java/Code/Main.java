@@ -30,7 +30,10 @@ public class Main {
     
     public static float randomRichter(){
         float dec = r.nextFloat();
-        int grade = 1+r.nextInt(8);
+        int grade = 1+r.nextInt(9);
+        if ( (grade+dec) > 9.5f) {
+            return 9.5f;
+        }
         return (float)(grade+dec);
     }
     
