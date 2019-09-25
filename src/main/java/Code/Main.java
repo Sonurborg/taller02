@@ -5,8 +5,8 @@ import java.util.Random;
 public class Main {
     
     static Random r= new Random();
-    static int dias;
-    static float[][] matrix;
+    public static int dias;
+    public static float[][] matrix;
     
     public static void main(String[]Args){
         summonMatrix();
@@ -37,7 +37,7 @@ public class Main {
         return (float)(grade+dec);
     }
     
-    private static void menu(){
+    public static void menu(){
         int selection;
         do {
            selection=optionSel();
@@ -45,7 +45,7 @@ public class Main {
         }while (selection!=3);
     }
     
-    private static int optionSel() {
+    public static int optionSel() {
         System.out.println("Seleccione lo que desea realizar");
         System.out.println(" 1 - Mostrar Mayor Sismo");
         System.out.println(" 2 - Sismos Mayores a 4.0 por día");
